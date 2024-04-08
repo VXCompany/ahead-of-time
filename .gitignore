@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Workshop related
+*.class
+*.exe
+
+demo-setup-quarkus/demo1/src/*
+
+
