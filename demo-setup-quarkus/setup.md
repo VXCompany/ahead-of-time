@@ -20,8 +20,7 @@ iex "& { $(iwr https://ps.jbang.dev) } app install --fresh --force quarkus@quark
 sdk install quarkus
 ```
 
-
-# Smoketest
+## Smoketest
 
 Create a simple starter application using the CLI:
 

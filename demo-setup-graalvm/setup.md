@@ -12,37 +12,37 @@ Please note: Podman on Windows requires a working Windows Subsystem for Linux.
 
 ## macOS
 
-**Java 17 (minimum version)**
+### Java 17 (minimum version)
 
 ```Bash
 brew tap AdoptOpenJDK/openjdk && brew cask install adoptopenjdk17
 ```
 
-**Maven 3.8.1+**
+### Maven 3.8.1+
 
 ```Bash
 brew install maven
 ```
 
-**GraalVM**
+### GraalVM
 
 [https://www.graalvm.org/latest/docs/getting-started/macos/](https://www.graalvm.org/latest/docs/getting-started/macos/)
 
 ## Windows
 
-**Java 17**
+### Java 17
 
 [https://adoptopenjdk.net/](https://adoptopenjdk.net/)
 
 Make sure you set the JAVA_HOME environment variable and add %JAVA_HOME%\bin to your PATH
 
-**Maven 3.8.1+**
+### Maven 3.8.1+
 
 [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
 
 Make sure you set the MAVEN_HOME environment variable and add %MAVEN_HOME%\bin to your PATH
 
-**GraalVM**
+### GraalVM
 
 [https://www.graalvm.org/latest/docs/getting-started/windows/](https://www.graalvm.org/latest/docs/getting-started/windows/)
 
@@ -71,8 +71,7 @@ docker run -ti -p 8080:8080 -v `pwd`/work:/work \
   sdk install jbang
 ```
 
-
-# Smoketest
+## Smoketest
 
 Create a simple java file to test both the JVM as the Native Image capability:
 
