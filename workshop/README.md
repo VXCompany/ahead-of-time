@@ -6,8 +6,6 @@
 
 [Workshop voor Linux](https://quarkus.io/quarkus-workshops/super-heroes/variants/os-linux-ai-false-azure-false-cli-false-container-true-contract-testing-false-extension-false-kubernetes-true-messaging-false-native-false-observability-false/spine.html)
 
-
-
 ## Preparing for the Workshop
 
 ### Download the workshop scaffolding
