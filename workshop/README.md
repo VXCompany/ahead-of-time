@@ -17,15 +17,15 @@ git clone https://github.com/VXCompany/ahead-of-time.git
 cd workshop/quarkus-super-heroes/super-heroes
 ```
 
-| Let op: Paden in het workshop script zijn niet overal consistent / juist. Daar waar soms quarkus-workshop-super-heroes staat, wordt quarkus-super-heroes bedoeld.
+> Let op: Paden in het workshop script zijn niet overal consistent / juist. Daar waar soms quarkus-workshop-super-heroes staat, wordt quarkus-super-heroes bedoeld.
 
-| Letop: Mocht je foutmeldingen krijgen die iets zeggen over schrijftoegang tot bestanden ("Unable to write to file) controleer dan of de super-heroes directory niet ReadOnly is.
+> Letop: Mocht je foutmeldingen krijgen die iets zeggen over schrijftoegang tot bestanden ("Unable to write to file) controleer dan of de super-heroes directory niet ReadOnly is.
 
 ## Villain Microservice
 
 ### Bootstrapping the Villain REST Endpoint
 
-| Let op: Versies in de commando's zijn niet altijd correct. Ook zijn ze vrijwel allemaal bedoeld voor Bash en werken ze niet zonder aanpassing in Powershell op Windows.
+> Let op: Versies in de commando's zijn niet altijd correct. Ook zijn ze vrijwel allemaal bedoeld voor Bash en werken ze niet zonder aanpassing in Powershell op Windows.
 
 Juiste versie voor Linux, macOS en Windows Subsystem for Linux
 
@@ -53,6 +53,8 @@ Juiste versie voor Windows Powershell
 
 ## Sidetrack: de Native Application
 
+> We kunnen hier even afwijken van het workshop pad en een echte Native App (image/executable) bouwen. Aan het eind keren we weer terug naar de workshop.
+
 Volg hier de algemene stappen om van een "gewone" Quarkus app een Native Executable te maken:
 [Building a Native Image](https://quarkus.io/guides/building-native-image)
 
@@ -63,7 +65,7 @@ Mocht je wel lokaal willen bouwen, zorg dan voor een lokale installatie van Graa
 
 ### GraalVM setup
 
-| Let op: gebruik GraalVM 21 of 23 (reden: build performance)
+> Let op: gebruik GraalVM 21 of 23 (reden: build performance)
 <https://github.com/graalvm/graalvm-ce-builds/releases>
 
 Graal VM Native Build leunt op de aanwezigheid van een Environment Variable. Deze moet naar de juiste directory wijzen (en mag dus ook afwijken van bijvoorbeeld je JAVA_HOME). Draai je Graal VM ook als gewone JVM, dan ben je in 1x klaar met:
@@ -117,7 +119,7 @@ Bouw je lokaal, dan kun je het quarkus.native.container-build argument weglaten.
 
 Dit creeert de normale oputput in de "target" directory, maar ook een uitvoerbaar bestand: ./target/rest-villains-1.0.0-SNAPSHOT-runner.
 
-| Let op: Bij een containerized build is dit echter wel een Linux executable (x86), dus als je dit in Powershell op Windows doet kun je deze niet direct uitvoeren. Doe je dit op WSL, dan werkt het wel.
+> Let op: Bij een containerized build is dit echter wel een Linux executable (x86), dus als je dit in Powershell op Windows doet kun je deze niet direct uitvoeren. Doe je dit op WSL, dan werkt het wel.
 
 ### Run een containerized Quarkus Native app
 
@@ -161,7 +163,7 @@ Nu weer terug naar het hoofdpad: [Transactions and ORM](https://quarkus.io/quark
 
 ### Installing the PostgreSQL Dependency, Hibernate with Panache and Hibernate Validator
 
-| Let op: Scripts zijn bedoeld voor Bash en werken ze niet zonder aanpassing in Powershell op Windows.
+> Let op: Scripts zijn bedoeld voor Bash en werken ze niet zonder aanpassing in Powershell op Windows.
 
 Juiste versie voor Linux, macOS en Windows Subsystem for Linux
 
