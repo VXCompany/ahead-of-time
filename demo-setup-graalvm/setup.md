@@ -9,7 +9,6 @@ Please note: Podman on Windows requires a working Windows Subsystem for Linux.
 [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/) or
 [https://podman-desktop.io/downloads](https://podman-desktop.io/downloads)
 
-
 ## macOS
 
 ### Java 17 (minimum version)
@@ -30,7 +29,7 @@ brew install maven
 
 ## Windows
 
-### Java 17
+### Java 17 (of hoger)
 
 [https://adoptopenjdk.net/](https://adoptopenjdk.net/)
 
@@ -67,7 +66,7 @@ docker run -ti -p 8080:8080 -v `pwd`/work:/work \
   sdk install java
   sdk install maven
   sdk install quarkus
-  sdk install java 17.0.8-graalce
+  sdk install java 17.0.12-graalce
   sdk install jbang
 ```
 

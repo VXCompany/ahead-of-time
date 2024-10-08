@@ -1,5 +1,23 @@
 # Workshop Notes
 
+## De demo's
+
+Je kunt de demo's uit de presentatie zelf doen, maar ze zijn optioneel.
+
+[Demo Setup GraalVM](https://github.com/VXCompany/ahead-of-time/tree/main/demo-setup-graalvm)
+
+[Demo Setup Quarkus](https://github.com/VXCompany/ahead-of-time/tree/main/demo-setup-quarkus)
+
+Hierna kun je door met het hoofd script.
+
+## Workshop
+
+Er staan voorgeconfigureerde scripts klaar, deze zijn specifiek voor een operating system maar zijn inhoudelijk gelijk.
+
+Je volgt het script uit deze links, maar er kunnen per onderdeel notities/tips/correcties op deze pagina zijn opgenomen.
+
+> Let op: voor je aan Transactions and ORM begint, kun je de Sidetrack oefening doen die hier op deze pagina staa.
+
 [Workshop voor Windows](https://quarkus.io/quarkus-workshops/super-heroes/variants/os-windows-ai-false-azure-false-cli-false-container-true-contract-testing-false-extension-false-kubernetes-true-messaging-false-native-false-observability-false/spine.html)
 
 [Workshop voor macOS](https://quarkus.io/quarkus-workshops/super-heroes/variants/os-mac-ai-false-azure-false-cli-false-container-true-contract-testing-false-extension-false-kubernetes-true-messaging-false-native-false-observability-false/spine.html)
@@ -20,6 +38,22 @@ cd workshop/quarkus-super-heroes/super-heroes
 > Let op: Paden in het workshop script zijn niet overal consistent / juist. Daar waar soms quarkus-workshop-super-heroes staat, wordt quarkus-super-heroes bedoeld.
 
 > Letop: Mocht je foutmeldingen krijgen die iets zeggen over schrijftoegang tot bestanden ("Unable to write to file) controleer dan of de super-heroes directory niet ReadOnly is.
+
+### Checking Ports
+
+Op systemen met Microsoft Windows kun je de meeste bash scripts gewoon uitvoeren op WSL (Ubuntu heeft alle benodigde tools). Mocht je in Powershell aan de slag gaan, dan kun je het gebruikte commando vervangen.
+
+Linux, macOS, Windows WSL:
+
+```bash
+lsof –i tcp:<poortnummer>
+```
+
+Powershell:
+
+```bash
+netstat –bno | findstr :<poortnummer>
+```
 
 ## Villain Microservice
 
@@ -50,6 +84,13 @@ Juiste versie voor Windows Powershell
     "-Dpath=api/villains" `
     "-Dextensions=rest-jackson"
 ```
+
+> Let op: mocht je een foutmelding krijgen over het niet uitvoerbaar zijn van de Maven Wrapper "mvnw": controleer de permissies en pas waar nodig aan met "chmod +x mvnw
+"
+
+Zoals in het workshop script vermeld kun je ook een applicatie samenstellen op <https://code.quarkus.io/>. Je krijgt daarmee niet precies dezelfde configuratie als bij het Maven commando, maar dat is daarna eenvoudig zelf aan te passen. Let er wel op, dat je de volgende settings kiest:
+
+![codewithquarkus.png](../docs/codewithquarkus.png)
 
 ## Sidetrack: de Native Application
 
